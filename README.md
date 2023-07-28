@@ -121,7 +121,7 @@ If you encounter any bugs or have ideas for enhancements, please submit an issue
 
 ### License:
 
-The Pet Shelter Platform is open-source software licensed under the MIT License.
+The Pet Shelter Platform is open-source software licensed under the Apache License 2.0 License.
 
 ![MetYourPet Banner](resources/img/image.png?raw=true "MetYourPet Banner")
 
