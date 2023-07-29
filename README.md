@@ -3,13 +3,15 @@
 # metyourpet
 ### Abstract
 
-Pet Shelter Platform is a globally-oriented decentralized application (dApp) built on the XRP Ledger (XRPL), with its origins rooted in a deeply empathetic response to the tragic situation faced by pets and animals in Ukraine during the war with Russia, which began on 24th February 2022 and continues to impact lives today. The conflict has left many pets without their masters due to devastating circumstances, including loss of life and forced emigration. Additionally, the complexities and expenses associated with transporting animals abroad have made it challenging for pet owners and refugees to be reunited with their furry companions.
+MetYourPet (the Pet Shelter Platform) is a globally-oriented decentralized application (dApp) built on the XRP Ledger (XRPL), with its origins rooted in a deeply empathetic response to the tragic situation faced by pets and animals in Ukraine during the war with Russia, which began on 24th February 2022 and continues to impact lives today. The conflict has left many pets without their masters due to devastating circumstances, including loss of life and forced emigration. Additionally, the complexities and expenses associated with transporting animals abroad have made it challenging for pet owners and refugees to be reunited with their furry companions.
 
-In light of this humanitarian crisis, the Pet Shelter Platform has been designed with a sense of purpose and compassion, aiming to provide a lifeline to pets and refugees worldwide. Through XRPL integration and the utilization of XUMM for secure sign-ins, the platform offers a comprehensive solution for connecting animal shelters, pet owners, volunteers, and refugees, fostering a supportive global community dedicated to facilitating pet reunions, adoptions, and animal welfare.
+In light of this humanitarian crisis, MetYourPet has been designed with a sense of purpose and compassion, aiming to provide a lifeline to pets and refugees worldwide. Through XRPL integration and the utilization of XUMM for secure sign-ins, the platform offers a comprehensive solution for connecting animal shelters, pet owners, volunteers, and refugees, fostering a supportive global community dedicated to facilitating pet reunions, adoptions, and animal welfare.
+
+MetYourPet has secured the domain name metyourpet.xyz, which serves as the official online address for the platform. 
 
 ### Social Meaning and Value:
 
-The Pet Shelter Platform's genesis lies in the empathy and concern for the well-being of pets and animals affected by war in Ukraine. However, its mission transcends geographical boundaries, carrying social significance and value that extend to a broader global context. The core principles and impact of the Pet Shelter Platform include:
+MetYourPet's genesis lies in the empathy and concern for the well-being of pets and animals affected by war in Ukraine. However, its mission transcends geographical boundaries, carrying social significance and value that extend to a broader global context. The core principles and impact of the Pet Shelter Platform include:
 
 * Empowering Refugees and Pet Owners: The platform empowers refugees and pet owners by offering a means to connect with their pets left behind in challenging circumstances. This fosters a sense of hope, healing, and support during times of displacement.
 
@@ -41,6 +43,29 @@ In line with the global vision of the Pet Shelter Platform, future developments 
 
 * Educational Initiatives: Developing educational resources and initiatives to promote animal welfare, responsible pet ownership, and compassion for animals on a global scale.
 
+### Pet Adoption Flow
+
+1. NFT Creation and Ownership:
+The shelter, upon registration, creates an NFT (Non-Fungible Token) for each pet in its care. This NFT represents the unique identity of the pet. Initially, the shelter is the owner of these NFTs, representing the ownership of the pets.
+
+2. Adoption Process:
+When a pet is adopted, the adopter and shelter both sign the adoption agreement. The agreement specifies the terms and conditions of the adoption, the wallet addresses of the adopter and shelter, and any funding or care responsibilities. The shelter sends the NFT of the adopted pet to the specific XRP wallet address of the adopter.
+
+3. Pseudo Smart-Contract:
+To ensure the integrity and enforce the terms of the adoption agreement, multi-sign transactions can be considered (hooks and smart-contracts can be used). An automated process is implemented to handle various actions related to the adoption process and ownership of NFTs.
+
+4. NFT Transfer:
+The adoption transaction triggers the transfer of NFT ownership from the shelter to the Metyourpet Adoption wallet. The Metyourpet Adoption wallet issues a new NFT and requires the transaction to be signed by both the shelter and adopter.
+
+5. Dual-Signature Transaction:
+For the adoption and issuance of NFTs, a dual-signature transaction is required, where both the shelter and the adopter need to sign the transaction to validate and execute it.  Upon successful transfer, the NFT is now owned by the adopter or shelter (in the case of remote adoption), representing their ownership of the adopted pet.
+
+6. Integration with XRP Wallet:
+To facilitate the adoption process and NFT handling, the application will be integrated with an XRP wallet or use the Xumm SDK for wallet interactions.
+
+7. User Interface (UI):
+The implementation of a user-friendly interface that allows shelters and adopters to initiate and track the adoption process and handle NFT transfers.
+
 ## Tech Characteristics:
 
 The Pet Shelter Platform is built with cutting-edge technologies to ensure a robust, user-friendly, and secure experience:
@@ -58,30 +83,26 @@ The Pet Shelter Platform is built with cutting-edge technologies to ensure a rob
 To get started with Pet Shelter Platform and contribute to this meaningful project, follow these steps:
 
 1. Clone the Repository:
-
 ```
 git clone https://github.com/petushka1/metyourpet.git
 cd pet-shelter-platform
 ```
 
 2. Install Dependencies:
-   
 ```
 // For Rails (back-end)
 cd ../backend
 bundle install
 ```
-
-**For React (front-end)**
 ```
+// For React (front-end)
 cd ../frontend
 npm install
 ```
 
 1. Configure Database:
-   
-**Set up the database schema and seed initial data**
 ```
+// Set up the database schema and seed initial data
 cd ../backend
 rails db:create
 rails db:migrate
@@ -90,15 +111,14 @@ rails db:seed
 
 1. Run the Server:
 ```
-# Start the Rails server
+// Start the Rails server
 cd ../backend
 rails server
 ```
 
 1. Start the React App:
-   
-**Start the React development server**
 ```
+// Start the React development server
 cd ../frontend
 npm start
 ```
@@ -121,7 +141,7 @@ If you encounter any bugs or have ideas for enhancements, please submit an issue
 
 ### License:
 
-The Pet Shelter Platform is open-source software licensed under the Apache License 2.0 License.
+The Pet Shelter Platform is open-source software licensed under the MIT License.
 
 ![MetYourPet Banner](resources/img/image.png?raw=true "MetYourPet Banner")
 
