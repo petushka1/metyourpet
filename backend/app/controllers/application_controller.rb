@@ -1,4 +1,7 @@
-# app/controllers/application_controller.rb
 class ApplicationController < ActionController::Base
-    # Your common controller logic and methods can be defined here
+  skip_before_action :verify_authenticity_token
+
+  def current_user
+    @current_user ||= User.find_by(id: session[:user_id])
   end
+end

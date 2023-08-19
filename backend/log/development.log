@@ -44571,3 +44571,134 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 142ms (Views: 37.6ms | ActiveRecord: 0.0ms | Allocations: 4938)
 
 
+Started GET "/" for ::1 at 2023-08-18 23:25:44 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.6ms | Allocations: 554)
+Completed 200 OK in 192ms (Views: 43.0ms | ActiveRecord: 0.0ms | Allocations: 5021)
+
+
+Started GET "/" for ::1 at 2023-08-19 00:15:26 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.2ms | Allocations: 301)
+Completed 200 OK in 25ms (Views: 14.1ms | Allocations: 1088)
+
+
+Started GET "/" for ::1 at 2023-08-19 01:17:41 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.0ms | Allocations: 554)
+Completed 200 OK in 321ms (Views: 196.6ms | ActiveRecord: 0.0ms | Allocations: 4937)
+
+
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 16:01:05 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (8.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 16:26:43 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 16:27:37 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 16:29:10 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/create_login" for ::1 at 2023-08-19 16:29:20 +0300
+Processing by XummController#create_login as HTML
+Completed 500 Internal Server Error in 705ms (ActiveRecord: 0.0ms | Allocations: 8143)
+
+
+  
+RestClient::Forbidden (403 Forbidden):
+  
+app/controllers/xumm_controller.rb:24:in `create_login'
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 16:39:36 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 16:41:44 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 16:54:46 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 16:57:03 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 17:01:16 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 17:15:15 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 17:16:29 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5275782430194190950)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5275782430194190950)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 17:33:09 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 17:46:44 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 17:46:54 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/static_controller.rb:2:in `<class:StaticController>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 18:09:26 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (13.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/dist/bundle.js"):
+  
