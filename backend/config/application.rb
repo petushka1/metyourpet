@@ -13,9 +13,6 @@ module Backend
       'Cache-Control' => 'public, max-age=31536000',
       'Expires' => 1.year.from_now.to_formatted_s(:rfc822)
     }
-
-    config.public_file_server.static_paths || = []    
-    config.public_file_server.static_paths << Rails.root.join('frontend', 'dist')
     
     config.middleware.insert_before 0, Rack::Cors do
       allow do
