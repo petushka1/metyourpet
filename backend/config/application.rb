@@ -19,12 +19,5 @@ module Backend
       'Cache-Control' => 'public, max-age=31536000',
       'Expires' => 1.year.from_now.to_formatted_s(:rfc822)
     }
-    
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins 'http://localhost:3001'
-        resource '*', headers: :any, methods: [:get, :post, :options]
-      end
-    end
   end
 end
