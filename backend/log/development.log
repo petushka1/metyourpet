@@ -44702,3 +44702,26 @@ Started GET "/dist/bundle.js" for ::1 at 2023-08-19 18:09:26 +0300
   
 ActionController::RoutingError (No route matches [GET] "/dist/bundle.js"):
   
+Started GET "/dist/bundle.js" for ::1 at 2023-08-19 18:49:02 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/dist/bundle.js"):
+  
+Started GET "/dist/bundle.js" for ::1 at 2023-08-20 09:42:48 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/dist/bundle.js"):
+  
+Started GET "/bumdle.js" for ::1 at 2023-08-20 09:43:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/bumdle.js"):
+  
+Started GET "/dist/bundle.js" for ::1 at 2023-08-20 09:46:41 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/dist/bundle.js"):
+  
+Started GET "/dist/bundle.js" for ::1 at 2023-08-20 14:30:15 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/dist/bundle.js"):
+  
