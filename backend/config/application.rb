@@ -7,7 +7,13 @@ Bundler.require(*Rails.groups)
 module Backend
   class Application < Rails::Application
     config.load_defaults 7.0 if defined?(config.load_defaults)
+
+    # Initialize the static_paths array
+    config.public_file_server.static_paths ||= []
+
     config.public_file_server.enabled = true
+    config.public_file_server.static_paths << Rails.root.join('frontend', 'dist')
+
     
     config.public_file_server.headers = {
       'Cache-Control' => 'public, max-age=31536000',
