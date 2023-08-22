@@ -1,4 +1,6 @@
 class XummController < ApplicationController
+  # ... (other actions)
+
   def create_login
     payload_data = {
       txjson: {
@@ -25,7 +27,7 @@ class XummController < ApplicationController
 
     if response.code == 200
       payload = JSON.parse(response.body)
-      redirect_to payload['next']['always']
+      render json: { url: payload['next']['always'] }
     else
       render plain: 'Error: Unable to create XUMM sign-in payload'
     end
@@ -33,10 +35,11 @@ class XummController < ApplicationController
 
   def callback
     if params[:status] == 'signed'
-      user_token = SecureRandom.hex(32)
+      user_token = SecureRandom.uuid
       session[:user_token] = user_token
+      session[:wallet_address] = params[:user_address] # Save the user's wallet address
 
-      render json: { success: true, token: user_token }
+      redirect_to user_signed_in? ? '/register' : '/shelters'
     else
       render json: { success: false, error: 'XUMM sign-in failed. Please try again.' }
     end

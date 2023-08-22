@@ -43,6 +43,12 @@ In line with the global vision of the Pet Shelter Platform, future developments 
 
 * Educational Initiatives: Developing educational resources and initiatives to promote animal welfare, responsible pet ownership, and compassion for animals on a global scale.
 
+* Pet Meal Brands/Stores Support: The app encourages pet stores to participate in animal welfare by offering support or discounts. Pet stores can create profiles to showcase their contributions and commitments to animal well-being.
+  
+* Participant Rating: To promote accountability and build trust, participants (volunteers, pet stores, adopters) can be rated by the community based on their interactions and contributions.
+  
+* Black List: Recognizing the importance of safety, the app includes a "Black List" feature, where users or entities with questionable intentions can be flagged, creating a safer environment for animals and users.
+
 ### Pet Adoption Flow
 
 1. NFT Creation and Ownership:
@@ -65,6 +71,13 @@ To facilitate the adoption process and NFT handling, the application will be int
 
 7. User Interface (UI):
 The implementation of a user-friendly interface that allows shelters and adopters to initiate and track the adoption process and handle NFT transfers.
+
+## R&D
+
+* Expanding the platform's reach by incorporating features like geolocation services to help users find animals available for adoption in their vicinity.
+
+* Partnerships with veterinary clinics, animal trainers, and other relevant stakeholders to enhance the platform's capabilities and impact.
+  
 
 ## Tech Characteristics:
 
@@ -146,5 +159,7 @@ The Pet Shelter Platform is open-source software licensed under the MIT License.
 ![MetYourPet Banner](resources/img/image.png?raw=true "MetYourPet Banner")
 
 ***The Pet Shelter Platform remains steadfast in its commitment to compassion, transparency, and technological innovation. As the project expands and evolves, it aims to make a profound and lasting impact on the lives of pets, refugees, and communities worldwide.***
+
+
 
 
