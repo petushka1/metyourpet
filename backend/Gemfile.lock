@@ -195,6 +195,7 @@ GEM
       netrc (~> 0.8)
     rexml (3.2.6)
     rubyzip (2.3.2)
+    secure_random_string (1.0.0)
     selenium-webdriver (4.10.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -256,6 +257,7 @@ DEPENDENCIES
   rack-cors
   rails (~> 7.0.4)
   rest-client (~> 2.1)
+  secure_random_string (~> 1.0)
   selenium-webdriver
   sprockets-rails
   stimulus-rails

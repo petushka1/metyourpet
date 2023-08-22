@@ -2,28 +2,22 @@ require_relative "boot"
 
 require "rails/all"
 
-# Require the gems listed in Gemfile, including any gems
-# you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
 module Backend
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0 if defined?(config.load_defaults)
 
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins 'http://localhost:3001' # Replace with your frontend domain or origin
-        resource '*', headers: :any, methods: [:get, :post, :options]
-      end
-    end
+    # Initialize the static_paths array
+    config.public_file_server.static_paths ||= []
 
-    # Configuration for the application, engines, and railties goes here.
-    #
-    # These settings can be overridden in specific environments using the files
-    # in config/environments, which are processed later.
-    #
-    # config.time_zone = "Central Time (US & Canada)"
-    # config.eager_load_paths << Rails.root.join("extras")
+    config.public_file_server.enabled = true
+    config.public_file_server.static_paths << Rails.root.join('frontend', 'dist')
+
+    
+    config.public_file_server.headers = {
+      'Cache-Control' => 'public, max-age=31536000',
+      'Expires' => 1.year.from_now.to_formatted_s(:rfc822)
+    }
   end
 end

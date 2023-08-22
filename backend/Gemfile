@@ -51,6 +51,8 @@ gem 'rest-client', '~> 2.1'
 gem 'json', '~> 2.6', '>= 2.6.3'
 gem 'ffi', '~> 1.15.5'
 
+gem 'secure_random_string', '~> 1.0'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
