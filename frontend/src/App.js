@@ -1,13 +1,17 @@
 import React from 'react';
-import ShelterRegistration from './components/ShelterRegistration';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import SignIn from './components/SignIn';
+import RegistrationForm from './components/RegistrationForm';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Metyourpet</h1>
-      <ShelterRegistration />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={SignIn} />
+        <Route path="/register" component={RegistrationForm} />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
